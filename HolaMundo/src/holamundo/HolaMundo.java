@@ -34,12 +34,13 @@ public class HolaMundo {
         
         System.out.println("Hola \n este es \n un nuevo\n amanecer");
         System.out.println("hola \t este es \t un nuevo\t amanecer");
+       
         // variables
         int edad; //tipo entero
         double peso; //tipo decimal
         char inicial; //tipo carapter letras,digitos, simbolos especiales
         String nombre; //tipo cadena 
-        
+        boolean estado; //tipo estado -true (verdadero) / false(falso)
         edad = 21;
         peso = 60.5;
         inicial = 'D';
