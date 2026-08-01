@@ -46,7 +46,6 @@ public class DonacionDeSangre {
         peso = teclado.nextInt();
         
       if (edad>=18 && edad<=65 && peso>=110){
-          
           teclado.nextLine();
         
         
@@ -68,6 +67,7 @@ public class DonacionDeSangre {
       
         System.out.println("cuales son sus niveles de hierro");
         niveles = teclado.nextInt();
+        teclado.nextLine();
         
         
         
