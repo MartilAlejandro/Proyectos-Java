@@ -14,8 +14,8 @@ public class CalculoDeUnRectangulo {
 
     /**
      * 1. Cálculo con dos variables Escribir un programa que solicite al usuario la base y la altura de un
-rectángulo. Utilice estas dos variables para calcular el área del rectángulo (Base X Altura) y el
-perímetro (suma de todos sus lados). Imprimir ambos resultados en pantalla
+          rectángulo. Utilice estas dos variables para calcular el área del rectángulo (Base X Altura) y el
+          perímetro (suma de todos sus lados). Imprimir ambos resultados en pantalla
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -28,7 +28,6 @@ perímetro (suma de todos sus lados). Imprimir ambos resultados en pantalla
         double base =0;
         double altura =0;
         double perimetro =0;
-        double lados =0;
         double area =0;
         
         //solicitud del la base de un rectangulo
@@ -51,15 +50,8 @@ perímetro (suma de todos sus lados). Imprimir ambos resultados en pantalla
         //salto de 2 lineas
         System.out.println("");
         
-        //solicitud de los lados de un rectangulo
-        System.out.println("Ingrese los lados del rectangulo:");
-        lados = teclado.nextDouble();
-        
         //formula para el perimetro de un rectangulo
         perimetro =base*2+altura*2;
-        
-        //salto de 2 lineas
-        System.out.println("");
         
         //resultado del perimetro de un rectangulo
         System.out.println("el perimetro del rectangulo es:" + perimetro);
