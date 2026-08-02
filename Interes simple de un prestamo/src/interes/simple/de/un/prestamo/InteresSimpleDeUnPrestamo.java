@@ -21,26 +21,34 @@ public class InteresSimpleDeUnPrestamo {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        //ingreso de datos
         Scanner teclado = new Scanner(System.in);
         
+        //variables para los calculos
         int capital =0;
         int Tasa =0;
         int tiempo =0;
         int interes =0;
         
+        //ingreso del capital inicial
         System.out.println("Ingrese el capital inicial:");
         capital =teclado.nextInt();
         
+        //ingreso de la tasa de interes
         System.out.println("Ingrese la tasa de interes:");
         Tasa =teclado.nextInt();
         
+        //ingreso de los años a pagar
         System.out.println("Tiempo a pagar en anos:");
         tiempo =teclado.nextInt();
         
+        //salto de linea
         System.out.println("");
         
+        //formula del interes simple
         interes = capital*Tasa*tiempo/100;
         
+        //resultado del interes generado
         System.out.println("El interes generado es:" + interes);
         
         
