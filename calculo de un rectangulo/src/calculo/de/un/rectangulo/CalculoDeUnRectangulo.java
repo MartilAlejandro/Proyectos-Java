@@ -20,8 +20,10 @@ perímetro (suma de todos sus lados). Imprimir ambos resultados en pantalla
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
         //crear el objeto Scanner para leer los datos del usuario
         Scanner teclado = new Scanner(System.in);
+        
         //variables declaradas
         double base =0;
         double altura =0;
