@@ -13,8 +13,8 @@ import java.util.Scanner;
 
 /**
  * 2. Uso de la librería Math Desarrolle un programa que pida al usuario el radio de un círculo.
-Utilizando la constante Math.PI y la función Math.pow() de la librería matemática de Java, calcule
-el área y circunferencia de dicho círculo y muestre el resultado al usuario.
+      Utilizando la constante Math.PI y la función Math.pow() de la librería matemática de Java, calcule
+      el área y circunferencia de dicho círculo y muestre el resultado al usuario.
  *
  * @author marti
  */
@@ -25,12 +25,15 @@ public class CalculoDeUnCirculo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
      // entrada de dato por el usuario   
      Scanner teclado = new Scanner (System.in); 
+     
      //declaracion de variable
        double radio =0;
        double area =0;
        double circunferencia =0;
+       
        //ingreso de el radio de el circulo
         System.out.println("Ingrese el radio del circulo:");
         radio = teclado.nextDouble();
