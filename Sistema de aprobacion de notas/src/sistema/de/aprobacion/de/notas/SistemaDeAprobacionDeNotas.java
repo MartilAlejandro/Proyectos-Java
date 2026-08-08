@@ -26,7 +26,9 @@ public class SistemaDeAprobacionDeNotas {
     double examen2 = 0;
     double promedio =0;
 
-    System.out.print("escriba el nombre del estudiante: ");
+    System.out.print("\nSISTEMA DE APROACION DE NOTAS \n");
+    
+    System.out.print("\nEscriba el nombre del estudiante: ");
     nombreestudiante = teclado.nextLine();
 
 
