@@ -17,39 +17,47 @@ public class CalculadoraAritmeticaDeConsola {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    
+    //entrada de datos
    Scanner teclado = new Scanner(System.in);
-   
+   //variables declaradas
     int num1 = 0;
     int num2 = 0;
     char operador = '@';
    
-   
-System.out.printf("\n Calculadora Aritmetica de Consola \n");  
+//titulo del proyecto 
+System.out.printf("\n Calculadora Aritmetica de Consola \n"); 
 
+//ingreso del primer numero
 System.out.printf("\n Ingresar primer numero: ");
 num1 = teclado.nextInt();
 
+//ingreso del segundo 
 System.out.printf("\n Ingresar segundo numero: ");
 num2 = teclado.nextInt();
 
+//ingreso del operador aritmetico a utilizar
 System.out.printf("\n Ingresar operador aritmetico solo se puede ingresar (+,-,*,/,%%)");
 operador = teclado.next().charAt(0);
 
+//inicio del switch para los casos de las operaciones
 switch(operador){
    
+    //caso + suma
     case'+':
      System.out.printf("\nResultado de la suma es: %.2f%n",(double)num1+num2);
     break;
 
+    //caso - resta
     case'-':
     System.out.printf("\nResultado de la resta es:: %.2f%n",(double)num1-num2);
     break;
-   
+    
+    //caso * multiplicacion
     case'*':
     System.out.printf("\nResultado de la multiplicacion es: %.2f%n",(double)num1*num2);
     break;
-   
+    
+    //caso / division con condicion para que no se pueda dividir entre 0
     case'/':
         if(num2 !=0){
     System.out.printf("\nResultado de la division es: %.2f%n",(double)num1/num2);
@@ -62,6 +70,7 @@ switch(operador){
         
     break;
     
+    //caso % con condicion para que el modulo no divida entre 0
     case'%':
         if(num2 !=0){
             
@@ -75,7 +84,8 @@ switch(operador){
         }
         break;
        
-   
+     
+     // para que solo se puedan ingresar los operadores de los casos   
     default:
     System.out.print("\n Operador no reconocido \n");
 }//fin de caso
