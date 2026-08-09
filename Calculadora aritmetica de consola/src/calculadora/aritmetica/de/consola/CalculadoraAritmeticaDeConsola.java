@@ -49,7 +49,7 @@ switch(operador){
 
     //caso - resta
     case'-':
-    System.out.printf("\nResultado de la resta es:: %.2f%n",(double)num1-num2);
+    System.out.printf("\nResultado de la resta es: %.2f%n",(double)num1-num2);
     break;
     
     //caso * multiplicacion
