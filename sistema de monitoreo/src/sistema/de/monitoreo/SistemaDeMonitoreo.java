@@ -4,6 +4,7 @@
  */
 package sistema.de.monitoreo;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -69,13 +70,77 @@ public class SistemaDeMonitoreo {
      *        a. definicion de libreria RANDOM
      *        b. declaracion de variable
      *        c. mostrar el numero Random generado temporalmente
-     * 
-     * 
+     *        d. rango de temp 200-400
+     *        e.ciclo de repeticion, while
+     * 4. formula f=(c * 9/5)+32
+     * 5. limite de sobrecalentamiento 350 c (602 f)
+     *               estructura de seleccion (if/else)
+     * 6. validacion de lectura (do - while) 0-50
+     * 7. sumar los numeros de sobrecalentamiento
+     * 8. calcular el promedio
+     * 9.mostrar el resumen 
+     *     promedio
+     *      #sobrecalentamiento
+     * 10.generar una alerta de sobrecalentamiento
      */
     public static void main(String[] args) {
         // TODO code application logic here
         
         Scanner teclado = new Scanner(System.in);
-    }//fin de main
+        Random rd = new Random();
+        
+        String nombreusuario = "jhon doe";
+        int lectura =0;
+        double tempc =0;
+        int ciclo =0;
+        double tempf =0;
+        int sumac =0;
+        double promedio =0;
+        double acumtemp=0;
+        System.out.print("nombre de operario :");
+        nombreusuario = teclado.nextLine().toUpperCase();
+        System.out.printf("validar captura: %s\n",nombreusuario);
+       do{ 
+        System.out.print("numero de lectura :");
+        lectura = teclado.nextInt();
+       // System.out.printf("validacion captura :%d\n",lectura);
+       if(!(lectura <0 && lectura < 50)){
+           System.out.println("valor no valido");
+           System.out.println("tiene que ser entre 0-50");
+       }
+       }while(!(lectura >0 && lectura<50));
+        tempc = rd.nextDouble(200,400);
+        //tempc = (Math.random()*500)-300 + 200);
+        System.out.printf("validacion random :%.2f\n",tempc);
+        
+        while (ciclo < lectura){
+            
+             tempc = rd.nextDouble(200,400);
+             tempf = (tempc *9/5)+32;     
+             //tempc = (Math.random()*500)-300 + 200);
+             System.out.printf("validacion random :%.2f\n",tempc);
+             System.out.printf("num lec: %d\ttemp c: %.2f\n",ciclo+1,tempc);
+             System.out.printf("temp en faren: %.2f\n",tempf);
+             
+             if(tempf > 662){
+                 System.out.println("alerta!!!...sobrecalentamiento");
+                 sumac++;
+             }
+                 else{
+                 acumtemp +=tempf;        
+                         
+                         }
+   
+            ciclo++;
+        }//fin while
+        
+        promedio = acumtemp / lectura;
+        
+        System.out.println("-------------------");
+        System.out.println("      resumen       ");
+        System.out.println("-------------------");    
+        System.out.printf("promedio de temp: %.2f\n",promedio);
+        System.out.printf("# sobrecalentamiento: %d", sumac);
+    }//fin de mainf
     
 }//fin class
