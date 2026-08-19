@@ -89,27 +89,27 @@ public class MisionEspacial {
 
         
 
-        while (distancia > 0 || combustible > 0) {
+        while (distancia > 0 && combustible > 0) {
             System.out.println("Distancia restante: " + distancia +" | Combustible: " + combustible);
             
             int evento = rd.nextInt(2) + 1;
 
             if (evento == 1){
                 System.out.println("¡Impacto de asteroide!");
-                combustible = combustible + 50;
+                combustible = combustible - 50;
             } else if (evento == 2) {
                 System.out.println("¡Viento solar a favor!");
-                distancia += 100;
+                distancia -= 100;
             }
 
-            distancia = distancia + 50;
+            distancia = distancia - 50;
         }//Fin de While
 
-        if (distancia == 0) {
-            System.out.println("¡Misión completada con éxito, " + piloto + "!");
+        if (distancia <=0) {
+            System.out.println("¡Mision completada con exito, " + piloto + "!");
         }//Fin de If 
         else {
-            System.out.println("Misión fallida. Te quedaste sin combustible.");
+            System.out.println("Mision fallida. Te quedaste sin combustible.");
         }//Fin de Else
     
     }//Fin de Main
