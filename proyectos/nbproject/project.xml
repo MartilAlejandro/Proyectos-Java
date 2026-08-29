@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.java.j2seproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+            <name>proyectos</name>
+            <source-roots>
+                <root id="src.Calculadora%20aritmetica%20de%20consola.dir"/>
+                <root id="src.Clasificación%20de%20Descuentos%20en%20Tienda%20de%20Software%20Enunciado.dir"/>
+                <root id="src.Conversiones.dir"/>
+                <root id="src.Donacion%20de%20sangre.dir"/>
+                <root id="src.Genereacion%20de%20token.dir"/>
+                <root id="src.HolaMundo.dir"/>
+                <root id="src.Interes%20simple%20de%20un%20prestamo.dir"/>
+                <root id="src.Mision%20Espacial.dir"/>
+                <root id="src.Seleccion%20de%20vehiculo.dir"/>
+                <root id="src.Sistema%20de%20aprobacion%20de%20notas.dir"/>
+                <root id="src.TiempoRelax.dir"/>
+                <root id="src.calculo%20con%20dos%20variables.dir"/>
+                <root id="src.calculo%20de%20un%20circulo.dir"/>
+                <root id="src.calculo%20de%20un%20rectangulo.dir"/>
+                <root id="src.ciclo%20repeticion%20for.dir"/>
+                <root id="src.conversor%20de%20unidades%20fisicas.dir"/>
+                <root id="src.cuenta%20de%20restaurante.dir"/>
+                <root id="src.facturacion.dir"/>
+                <root id="src.nbproject.dir"/>
+                <root id="src.sensores%20de%20temperatura.dir"/>
+                <root id="src.simulacion%20de%20trayectoria%20balistica.dir"/>
+                <root id="src.sistema%20de%20monitoreo.dir"/>
+            </source-roots>
+            <test-roots/>
+        </data>
+    </configuration>
+</project>
