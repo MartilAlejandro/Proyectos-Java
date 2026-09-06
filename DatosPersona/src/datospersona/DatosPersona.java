@@ -19,14 +19,7 @@ public class DatosPersona {
         // TODO code application logic here
 
         Scanner Scan = new Scanner(System.in);
-
-        Datos Alejandro = new Datos("Alejandro", 33, 1.64, 'M', 210);
-        Datos David = new Datos("David", 19, 1.60, 'M', 140);
-        Datos Suazo = new Datos("Suazo", 25, 1.73, 'M', 170);
-
-        Alejandro.ImpresionDatos();
-        David.ImpresionDatos();
-        Suazo.ImpresionDatos();
+        Datos Estudiantes = new Datos();
 
         String nombres = "fg";
         int edades = 0;
@@ -34,27 +27,43 @@ public class DatosPersona {
         double pesos = 0;
         char generos = 'c';
 
-        for (int i = 0; i < 5; i++) {
-
+        for (int i = 0; i < 2; i++) {
+            System.out.println("ingrese el nombre: ");
             nombres = Scan.nextLine();
-            Estudiantes.setnombres(nombres, i);
+            Estudiantes.Setnombres(nombres, i);
+            
+            System.out.println("----------------------------");
 
+            System.out.println("ingrese la edad: ");
             edades = Scan.nextInt();
             Estudiantes.setedades(edades, i);
+            
+            System.out.println("----------------------------");
 
+            System.out.println("ingrese la estatura: ");
             estaturas = Scan.nextDouble();
             Estudiantes.setestaturas(estaturas, i
             );
-
-            pesos = Scan.nextDouble();
-            Estudiantes.setpesos(pesos, i
-            );
             
+            System.out.println("----------------------------");
+
+            System.out.println("ingrese el peso: ");
+            pesos = Scan.nextDouble();
+            Estudiantes.setpesos(pesos, i);
+            
+            System.out.println("----------------------------");
+
+            Scan.nextLine();
+
+            System.out.println("ingrese el genero: ");
             generos = Scan.nextLine().charAt(0);
-            Estudiantes.setgeneros(generos, i
-            );
+            Estudiantes.setgeneros(generos, i);
+            
+            System.out.println("----------------------------");
 
         }
+
+        Estudiantes.ImpresionDatos();
 
     }//fin main
 
